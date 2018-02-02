@@ -5,9 +5,9 @@
 [Maven](https://maven.apache.org/)<br>
 [Java8](http://www.oracle.com/technetwork/java/javase/overview/index.html)<br>
 [NodeJS](https://nodejs.org)<br>
-
 <br>
-#### Starta frontend<br>
+
+#### Starta frontend
 ```
 cd frontend
 npm install
