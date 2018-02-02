@@ -1,5 +1,7 @@
 # crm-monty-hall-test
 
+Ett förberett projekt baserat på create-react-app och spring initializr.
+
 #### Systemkrav
 
 [Maven](https://maven.apache.org/)<br>
