@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 
 export default function useBackendHealth() {
-    const [backendHealth, setBackendHealth] = useState()
+    const [backendHealth, setBackendHealth] = useState();
     let interval;
 
     function getHealth() {
@@ -17,12 +17,16 @@ export default function useBackendHealth() {
             .catch(res => {
                 console.log(res);
                 setBackendHealth("DOWN");
-            })
+            });
     }
 
     useEffect(() => {
         setBackendHealth("UNKNOWN")
         interval = setInterval(getHealth, 3000);
+
+        return () => {
+            clearInterval(interval);
+        }
     }, [])
 
     return backendHealth

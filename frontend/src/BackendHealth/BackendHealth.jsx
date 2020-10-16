@@ -5,13 +5,13 @@ import './BackendHealth.css';
 import useBackendHealth from "./useBackendHealth";
 
 function BackendHealth() {
-    const backendHealth = useBackendHealth()
+    const backendHealth = useBackendHealth();
 
     return (
         <div className="BackendHealth">
             <p>Backend is: <a className={backendHealth}>{backendHealth}</a></p>
         </div>
-    )
+    );
 }
 
 export default BackendHealth;
