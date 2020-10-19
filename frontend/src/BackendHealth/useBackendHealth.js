@@ -3,7 +3,6 @@ import axios from "axios";
 
 export default function useBackendHealth() {
     const [backendHealth, setBackendHealth] = useState();
-    let interval;
 
     function getHealth() {
         axios.get(`actuator/health`)
@@ -22,7 +21,7 @@ export default function useBackendHealth() {
 
     useEffect(() => {
         setBackendHealth("UNKNOWN")
-        interval = setInterval(getHealth, 3000);
+        const interval = setInterval(getHealth, 3000);
 
         return () => {
             clearInterval(interval);

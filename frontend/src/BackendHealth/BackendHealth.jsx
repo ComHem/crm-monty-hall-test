@@ -1,5 +1,4 @@
-import React, {Component, useEffect, useState} from "react";
-import axios from 'axios';
+import React from "react";
 
 import './BackendHealth.css';
 import useBackendHealth from "./useBackendHealth";
@@ -9,7 +8,7 @@ function BackendHealth() {
 
     return (
         <div className="BackendHealth">
-            <p>Backend is: <a className={backendHealth}>{backendHealth}</a></p>
+            <p>Backend is: <span className={backendHealth}>{backendHealth}</span></p>
         </div>
     );
 }
