@@ -5,7 +5,7 @@ Ett förberett projekt baserat på create-react-app och spring initializr.
 #### Systemkrav
 
 [Maven](https://maven.apache.org/)<br>
-[Java8](http://www.oracle.com/technetwork/java/javase/overview/index.html)<br>
+[Java11](https://openjdk.java.net/projects/jdk/11/)<br>
 [NodeJS](https://nodejs.org)<br>
 <br>
 
